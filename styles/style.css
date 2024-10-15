@@ -1,9 +1,15 @@
+/*
+* --------------------------------------------
+* Custom styles to override the default Bootstrap ones
+* --------------------------------------------
+*/
 
-/*-------------------------------------
- * customize material design icon sizes 
- *-------------------------------------
- */
-
+/* New Color Palette:
+* Lightest (Text):         #f2fbf2      (text, contrast with dark)
+* Dark Green (Primary):    #005a00      
+* Light Green (Secondary): #72b372      (canvas background)
+* Reddish-Brown (Accent):  #b75858
+*/
 .material-icons.md-18 { font-size: 18px; }
 .material-icons.md-24 { font-size: 24px; }
 .material-icons.md-36 { font-size: 36px; }
@@ -13,3 +19,54 @@
     width: 100%;
     height: auto;
   }
+
+  .rounded-circle {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    /* Centers the circle horizontally */
+  }
+.bg-info {
+    background-color: #3a5a40 !important; /* Light green for secondary backgrounds */
+}
+
+.navbar-light .navbar-brand, .navbar-light .navbar-nav .nav-link {
+    color: #588157;            /* Dark green for brand name & nav links for visibility */
+}
+
+.btn-info {
+    color: #f2fbf2;            /* Lightest shade for text on info button for contrast */
+    background-color: #a3b18a; /* Light green for button background */
+    border-color: #3a5a40;     /* Dark green for button border */
+}
+
+.btn-primary {
+    color: #f2fbf2;            /* Lightest shade for text */
+    font-size: 150%;
+    background-color: #588157; /* Dark green for primary button background */
+    border-color: #344e41;     /* Reddish-brown for border to use as accent */
+    border-width: thick;
+}
+
+.btn-outline-primary {
+    background-color: #588157;
+}
+
+.btn-primary:hover{
+background-color:  #344e41;
+border-color: #588157;
+}
+
+.navbar-brand{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 2.25rem;
+}
+
+body {
+    background-color: #dad7cd; /* Lightest shade for body background to follow the 60% rule */
+}
+
+.material-icons {
+    padding-left: 10%;
+    padding-right: 10%;
+}
